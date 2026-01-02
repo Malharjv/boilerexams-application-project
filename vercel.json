@@ -1,8 +1,8 @@
 {
-  "functions": {
-    "api/questions/[id].js": {
-      "maxDuration": 10
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://api.boilerexams.com/$1"
     }
-  }
+  ]
 }
-
