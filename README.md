@@ -49,10 +49,10 @@ src/
 │   ├── AnswerList.jsx        # Answer choices list container
 │   └── AnswerChoice.jsx      # Individual answer choice component
 ├── styling/
-│   └── question.css          # Question page styles
+│   └── question.css          # Question page styling
 ├── App.jsx                   # Main app component
 ├── main.jsx                  # Application entry point
-├── index.css                 # Global styles
+├── index.css                 # Webpage styling
 ├── index.html                # HTML template
 ├── vite.config.js            # Vite configuration
 └── package.json              # Project dependencies and scripts
