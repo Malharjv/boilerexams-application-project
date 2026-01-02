@@ -48,7 +48,7 @@ src/
 │   ├── QuestionBody.jsx      # Question body with LaTeX rendering
 │   ├── AnswerList.jsx        # Answer choices list container
 │   └── AnswerChoice.jsx      # Individual answer choice component
-├── styles/
+├── styling/
 │   └── question.css          # Question page styles
 ├── App.jsx                   # Main app component
 ├── main.jsx                  # Application entry point
