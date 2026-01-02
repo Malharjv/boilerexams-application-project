@@ -1,5 +1,3 @@
-# Boilerexams Application Project (Question Page)
-
 ## Prerequisites
 
 - Node.js (version 14 or higher)
@@ -48,13 +46,14 @@ src/
 │   ├── QuestionBody.jsx      # Question body with LaTeX rendering
 │   ├── AnswerList.jsx        # Answer choices list container
 │   └── AnswerChoice.jsx      # Individual answer choice component
-├── styling/
-│   └── question.css          # Question page styling
+├── styles/
+│   └── question.css          # Question page styles
 ├── App.jsx                   # Main app component
 ├── main.jsx                  # Application entry point
-├── index.css                 # Webpage styling
+├── index.css                 # Global styles
 ├── index.html                # HTML template
 ├── vite.config.js            # Vite configuration
+├── vercel.json               # Vercel deployment configuration
 └── package.json              # Project dependencies and scripts
 ```
 
@@ -76,3 +75,5 @@ The application uses a Vite proxy to handle CORS issues. The proxy configuration
 - **Vite** - Build tool and development server
 - **KaTeX** - LaTeX math rendering
 - **CSS** - Styling
+
+
