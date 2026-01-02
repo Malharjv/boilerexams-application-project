@@ -38,22 +38,6 @@ The development server includes:
 - Hot module replacement (HMR) for instant updates
 - Automatic browser refresh on file changes
 
-### Production Build
-
-To create a production build:
-
-```bash
-npm run build
-```
-
-This creates an optimized production build in the `dist` directory.
-
-To preview the production build locally:
-
-```bash
-npm run preview
-```
-
 ## Project Structure
 
 ```
