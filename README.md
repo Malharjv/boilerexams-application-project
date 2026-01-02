@@ -40,6 +40,9 @@ The development server includes:
 
 ```
 src/
+├── api/
+│   └── questions/
+│       └── [id].js           # Serverless function for API proxy (Vercel)
 ├── components/
 │   ├── QuestionPage.jsx      # Main question page component
 │   ├── QuestionHeader.jsx    # Question header component
@@ -67,7 +70,11 @@ const questionId = '45aef305-4578-4621-99bc-447e7a8496aa' /* Replace questionID 
 
 ## API Proxy
 
-The application uses a Vite proxy to handle CORS issues. The proxy configuration is set in `vite.config.js` and routes `/api/*` requests to `https://api.boilerexams.com`.
+The application uses different proxy methods for development and production:
+
+- **Development**: A Vite proxy configured in `vite.config.js` routes `/api/*` requests to `https://api.boilerexams.com` to handle CORS issues during local development.
+
+- **Production (Vercel)**: A serverless function at `api/questions/[id].js` handles API requests when deployed on Vercel. The function proxies requests to the BoilerExams API and adds necessary CORS headers.
 
 ## Technologies Used
 
@@ -75,5 +82,3 @@ The application uses a Vite proxy to handle CORS issues. The proxy configuration
 - **Vite** - Build tool and development server
 - **KaTeX** - LaTeX math rendering
 - **CSS** - Styling
-
-
