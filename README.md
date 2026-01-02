@@ -48,13 +48,14 @@ src/
 │   ├── QuestionBody.jsx      # Question body with LaTeX rendering
 │   ├── AnswerList.jsx        # Answer choices list container
 │   └── AnswerChoice.jsx      # Individual answer choice component
-├── styling/
-│   └── question.css          # Question page styling
+├── styles/
+│   └── question.css          # Question page styles
 ├── App.jsx                   # Main app component
 ├── main.jsx                  # Application entry point
-├── index.css                 # Webpage styling
+├── index.css                 # Global styles
 ├── index.html                # HTML template
 ├── vite.config.js            # Vite configuration
+├── vercel.json               # Vercel deployment configuration
 └── package.json              # Project dependencies and scripts
 ```
 
